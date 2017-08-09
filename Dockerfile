@@ -1,10 +1,5 @@
 FROM centos
-#FROM ngp011.svl.ibm.com:5000/ngwb/microservicebasepower:latest
 RUN yum -y update
-#RUN echo "nameserver 8.8.8.8" >> /etc/resolv.conf
-#RUN echo "nameserver 8.8.4.4" >> /etc/resolv.conf
-#RUN wget ftp://rpmfind.net/linux/Mandriva/official/2007.0/i586/media/contrib/release/apt-0.5.15cnc6-15mdv2007.0.i586.rpm
-#RUN rpm -ivh apt*
 # Scala related variables.
 ARG SCALA_VERSION=2.12.2
 ARG SCALA_BINARY_ARCHIVE_NAME=scala-${SCALA_VERSION}
